@@ -1,15 +1,68 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to My Site</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-{% include banner.html %}
-{% include navbar.html %}
-
-<main class="content">
-  <section>
-    <h2>About Us</h2>
-    <p>This is a sample responsive homepage built with HTML and CSS.</p>
+  <!-- Banner -->
+  <section class="site-banner">
+    <div class="banner-content">
+      <h1 class="banner-title">BANNER TITLE</h1>
+      <p class="banner-tagline">taggity tag tag</p>
+    </div>
   </section>
-</main>
 
+  <!--Navbar-->
+  <nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Products</a>
+      <div class="dropdown-menu three-columns">
+        <!-- Column 1 -->
+        <ul>
+          <li><a href="products/4500.html">4500 Range</a></li>
+          <li><a href="products/voyager-4500.html">Voyager 4500</a></li>
+          <li><a href="products/pacific-4500.html">Pacific 4500</a></li>
+          <li><a href="products/tasman-hob.html">Tasman Hob</a></li>
+          <li><a href="products/gulf-hob.html">Gulf Hob</a></li>
+        </ul>
+
+        <!-- Column 2 -->
+        <ul>
+          <li><a href="products/5000.html">5000 Range</a></li>
+          <li><a href="products/neptune-5000.html">Neptune 5000</a></li>
+          <li><a href="products/pacific-5000.html">Pacific 5000</a></li>
+          <li style="margin-top: 10px;"><a href="products/hvac.html">HVAC</a></li>
+        </ul>
+
+        <!-- Column 3 -->
+        <ul>
+          <li><a href="products/accessories.html">Accessories</a></li>
+          <li><a href="products/springs-clips.html">Springs and Clips</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li><a href="support.html">Support</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Main Content -->
+  <main class="content">
+    <section>
+      <h2>About Us</h2>
+      <p>This is a sample responsive homepage built with HTML and CSS.</p>
+    </section>
+  </main>
+
+</body>
+</html>

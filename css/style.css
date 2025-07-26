@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .site-banner {
   background-color: #000; /* Black background */
   color: #fff;            /* White text */
@@ -20,12 +26,14 @@
 .banner-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: rgb(233, 131, 14);
 }
 
 .banner-tagline {
   font-size: 1.25rem;
   font-weight: 300;
   margin: 0;
+  color: #fff;
 }
 
 /* Responsive adjustments */
@@ -38,16 +46,6 @@
     font-size: 1rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -68,4 +66,77 @@ h1, h2 {
 
 p {
   margin-bottom: 1rem;
+}
+
+
+
+/* Base Navbar Style */
+.navbar {
+  background-color: #003668;
+  padding: 0;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu > li {
+  position: relative;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu > li > a:hover {
+  background-color: #444;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  padding: 20px;
+  z-index: 1000;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Three-column layout */
+.dropdown-menu.three-columns {
+  display: flex;
+  gap: 30px;
+}
+
+.dropdown-menu.three-columns ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #555;
+  border-radius: 4px;
 }
