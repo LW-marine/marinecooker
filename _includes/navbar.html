@@ -1,15 +1,20 @@
-<header class="navbar">
-  <div class="logo">MySite</div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/services.html">Services</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-</header>
-<script src="/assets/js/navbar.js"></script>
+<nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="/">Home</a></li>
+    <li class="dropdown">
+      <a href="#">About</a>
+      <ul class="dropdown-menu">
+        <li><a href="/about/team.html">Team</a></li>
+        <li><a href="/about/history.html">History</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">Services</a>
+      <ul class="dropdown-menu">
+        <li><a href="/services/web-design.html">Web Design</a></li>
+        <li><a href="/services/seo.html">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
