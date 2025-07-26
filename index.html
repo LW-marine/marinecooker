@@ -1,26 +1,15 @@
 ---
 layout: default
+title: Home
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to ""</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+{% include banner.html %}
+{% include navbar.html %}
 
-  {% include navbar.html %}
-  {% include banner.html %}
+<main class="content">
+  <section>
+    <h2>About Us</h2>
+    <p>This is a sample responsive homepage built with HTML and CSS.</p>
+  </section>
+</main>
 
-  <main class="content">
-    <section>
-      <h2>About Us</h2>
-      <p>This is a sample responsive homepage built with HTML and CSS.</p>
-    </section>
-  </main>
-
-</body>
-</html>
