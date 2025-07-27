@@ -14,7 +14,7 @@ ul {
 .site-banner {
   background-color: #000; /* Black background */
   color: #fff;            /* White text */
-  padding: 60px 20px;
+  padding: 40px 10px;
   text-align: center;
 }
 
@@ -25,7 +25,7 @@ ul {
 
 .banner-title {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   color: rgb(233, 131, 14);
 }
 
@@ -69,7 +69,6 @@ p {
 }
 
 
-
 /* Base Navbar Style */
 .navbar {
   background-color: #003668;
@@ -102,24 +101,30 @@ p {
 
 /* Dropdown styling */
 .dropdown-menu {
-  display: none;
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(10px); /* slide from below */
+  opacity: 0; /* Hidden by default */
+  pointer-events: none; /* Prevent clicks when hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;
   background-color: #333;
   padding: 20px;
   z-index: 1000;
   white-space: nowrap;
   border-radius: 4px;
 }
+
 .dropdown:hover .dropdown-menu {
-  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* slide up into position */
+  pointer-events: auto; /* Enable clicks when shown */
 }
 
 /* Three-column layout */
 .dropdown-menu.three-columns {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Create three equal columns */
   gap: 30px;
 }
 
