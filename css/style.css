@@ -46,6 +46,9 @@ ul {
 }
 
 body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
@@ -54,7 +57,31 @@ body, html {
 }
 
 main.content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: flex-start;  /* aligns to the top */
+  background-color: #f4f4f4;
+  padding-top: 2rem; /* spacing from the top */
+}
+
+.content-box {
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .content-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 }
 
 h1 {
